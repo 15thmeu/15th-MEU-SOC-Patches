@@ -1,0 +1,49 @@
+MetaFileClass {
+ Name "{85E0CCDDD136A912}Patches/15thmeu_maj.xob"
+ Configurations {
+  FBXResourceClass PC {
+   ExportMorphs 1
+   MaterialAssigns {
+    MaterialAssignClass "{64AAFAAE38EC3283}" {
+     SourceMaterial "usmc_patch_maj"
+     AssignedMaterial "{0E8AE7251BA33F86}Patches/Data/usmc_patch_maj.emat"
+    }
+   }
+   MeshParams {
+    MeshParam rhs_patch_sample {
+    }
+   }
+   GeometryParams {
+    GeometryParam UBX_patch_collider_sample {
+     SurfaceProperties {
+      "{A5DD387F98D4D4CF}Fabric_0_5mm_9B1C2BC43561D8C2.gamemat"
+     }
+     Mass 0
+     Margin 0
+    }
+   }
+   Common TXOCommonClass "{64AAFAAE3A0B5361}" : "{0877E7C4BB2B2C9A}Configs/System/ResourceTypes/PC/MeshObjectCommon.conf" {
+   }
+  }
+  FBXResourceClass XBOX_ONE : PC {
+   Common TXOCommonClass "{64AAFAAE3A0B525F}" : "{9D5B6207F7628CE2}Configs/System/ResourceTypes/XBOX_ONE/MeshObjectCommon.conf" {
+   }
+  }
+  FBXResourceClass XBOX_SERIES : PC {
+   Common TXOCommonClass "{64AAFAAE3A0B5263}" : "{DD9F02115C764647}Configs/System/ResourceTypes/XBOX_SERIES/MeshObjectCommon.conf" {
+   }
+  }
+  FBXResourceClass PS4 : PC {
+   Common TXOCommonClass "{64AAFAAE3A0B5205}" : "{53EC476BC921D99A}Configs/System/ResourceTypes/PS4/MeshObjectCommon.conf" {
+   }
+  }
+  FBXResourceClass PS5 : PC {
+   Common TXOCommonClass "{64AAFAAE3A0B52DE}" : "{F62AA8E7B8EA9D26}configs/ResourceTypes/PS5/MeshObjectCommon.conf" {
+   }
+  }
+  FBXResourceClass HEADLESS : PC {
+   Common TXOCommonClass "{64AAFAAE3A0B52FD}" : "{3A5B3356978039E8}Configs/System/ResourceTypes/HEADLESS/MeshObjectCommon.conf" {
+   }
+  }
+ }
+}
